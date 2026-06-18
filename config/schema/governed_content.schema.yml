@@ -1,0 +1,16 @@
+governed_content.governed_content.*:
+  type: config_entity
+  label: 'Governed content registry entry'
+  mapping:
+    id:
+      type: string
+      label: 'Governance key'
+    label:
+      type: label
+      label: 'Label'
+    target_entity_type_id:
+      type: string
+      label: 'Target content entity type ID'
+    target_entity_uuid:
+      type: uuid
+      label: 'Target content entity UUID'

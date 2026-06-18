@@ -49,6 +49,16 @@ This project is in early planning and prototyping.
 
 The name Governed Content is currently a working name.
 
+## Registry foundation
+
+Governed content items are represented by Drupal configuration entities. The
+configuration entity ID is the stable governance key, while the mapped Drupal
+content entity is identified by its entity type ID and UUID. Database IDs are
+intentionally not used because they may differ between environments.
+
+The registry currently provides identity only. Export, import, synchronization
+and drift detection are outside this foundation.
+
 ## Scope
 
 The module is intended for selected, stable, site-lifecycle content.
