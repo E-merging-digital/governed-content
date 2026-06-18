@@ -1,0 +1,15 @@
+{
+  "name": "drupal/governed_content",
+  "description": "Manage selected Drupal content as versionable, reviewable and deployable governed content.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.3",
+    "drupal/core": "^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\governed_content\\": "src/"
+    }
+  }
+}
