@@ -90,3 +90,33 @@ Codex must not open a pull request automatically.
 Codex may create a branch, commit and push if explicitly requested.
 
 The pull request must be opened manually by Jonathan unless explicitly instructed otherwise.
+
+## Handoff requirements
+
+At the end of each implementation task, Codex must provide:
+
+- the exact list of modified files;
+- validation commands executed;
+- validation results;
+- limitations or skipped validations;
+- the exact `git add` command including all modified files;
+- the recommended `git commit` command;
+- the recommended `git push` command;
+- a complete pull request body;
+- a command to generate the PR diff for review.
+
+The `git add` command must include every modified file and must be based on the actual `git status` result.
+
+The pull request body must include:
+
+- summary;
+- implemented changes;
+- out of scope items;
+- validation performed;
+- skipped or incomplete validation;
+- exact list of changed files;
+- related issue reference.
+
+Codex must not create the pull request automatically unless Jonathan explicitly asks for it.
+
+Codex must answer in French when providing the final handoff.
