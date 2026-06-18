@@ -92,3 +92,10 @@ The first useful capabilities should be:
 5. prepare safe future export/import workflows.
 
 Export/import should come after the governance model is clear.
+## Codex workflow
+
+Codex must follow the workflow documented in:
+
+`docs/development/codex-workflow.md`
+
+This workflow is mandatory for all implementation tasks.
