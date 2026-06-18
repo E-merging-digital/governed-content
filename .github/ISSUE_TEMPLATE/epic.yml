@@ -1,0 +1,60 @@
+name: Epic
+description: Create a larger functional area grouping multiple tasks.
+title: "[Epic]: "
+labels:
+  - "type:epic"
+  - "status:analysis"
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What larger outcome should this epic deliver?
+      placeholder: Describe the product or technical outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this epic needed?
+      placeholder: Link to the project vision, decisions, or related issues.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What belongs in this epic?
+      placeholder: List the functional areas included.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What must not be included in this epic?
+      placeholder: List explicit exclusions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Expected tasks
+      description: Which tasks are expected under this epic?
+      placeholder: List planned tasks, even if issue numbers do not exist yet.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this epic to be considered complete?
+      placeholder: Use a clear checklist.
+    validations:
+      required: true

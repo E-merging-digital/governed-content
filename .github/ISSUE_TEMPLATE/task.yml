@@ -1,0 +1,69 @@
+name: Task
+description: Create an implementation or documentation task.
+title: "[Task]: "
+labels:
+  - "type:task"
+  - "status:analysis"
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should this task achieve?
+      placeholder: Describe the expected outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this task needed?
+      placeholder: Link the task to the project vision, a decision, or a previous issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this task?
+      placeholder: List the expected changes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What must not be implemented as part of this task?
+      placeholder: List explicit exclusions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_notes
+    attributes:
+      label: Implementation notes
+      description: Technical notes, constraints, or suggested approach.
+      placeholder: Mention relevant files, APIs, or constraints.
+    validations:
+      required: false
+
+  - type: textarea
+    id: validation_requirements
+    attributes:
+      label: Validation requirements
+      description: How should this task be validated?
+      placeholder: List commands, checks, or manual validation steps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this task to be considered complete?
+      placeholder: Use a clear checklist.
+    validations:
+      required: true

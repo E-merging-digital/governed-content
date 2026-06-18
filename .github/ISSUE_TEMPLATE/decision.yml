@@ -1,0 +1,51 @@
+name: Decision
+description: Record a product, architecture, compatibility, or scope decision.
+title: "[Decision]: "
+labels:
+  - "type:decision"
+  - "status:analysis"
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What problem or uncertainty requires a decision?
+      placeholder: Explain the background and alternatives.
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: What is the decision?
+      placeholder: State the decision clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What changes because of this decision?
+      placeholder: Include trade-offs, constraints, and follow-up tasks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Which alternatives were considered and rejected?
+      placeholder: List alternatives and explain why they were not selected.
+    validations:
+      required: false
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: How will we know this decision remains valid?
+      placeholder: Mention future review points or technical validation.
+    validations:
+      required: false
