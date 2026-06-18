@@ -1,6 +1,6 @@
 {
   "name": "drupal/governed_content",
-  "description": "Manage selected Drupal content as versionable, reviewable and deployable governed content.",
+  "description": "Manage selected Drupal content as governed, versionable, reviewable and deployment-safe content.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "require": {
