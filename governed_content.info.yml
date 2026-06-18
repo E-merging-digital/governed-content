@@ -1,0 +1,5 @@
+name: 'Governed Content'
+type: module
+description: 'Manage selected Drupal content as versionable, reviewable and deployable governed content.'
+package: Content
+core_version_requirement: ^11
