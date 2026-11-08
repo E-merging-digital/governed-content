@@ -27,6 +27,19 @@ Before making changes, read:
 6. README.md
 7. the issue or task description provided by the user
 
+## Research first — reuse before building
+
+```text
+RESEARCH_FIRST = REQUIRED
+REUSE_EXISTING_FIRST = REQUIRED
+MINIMAL_CUSTOM_LAST = REQUIRED
+```
+
+Before substantial implementation or a new dependency, proportionately inspect the current repository and its existing components, native platform capabilities and official APIs/CLIs, maintained ecosystem packages/modules and their documentation/issue queues, then supported composition or extension options. For Drupal, check Core, Drush/APIs, Recipes and relevant contrib explicitly.
+
+Prefer **REUSE → CONFIGURE/COMPOSE → EXTEND → MINIMAL CUSTOM GLUE**. In the governing Issue/PR, briefly state the selected option and the material gap that justifies new code or dependencies. Check compatibility, maintenance, security and operational cost; this rule never requires a dependency just because one exists.
+
+Keep research proportionate: no new review gate, phase, test suite or exhaustive study for a trivial edit. Existing accepted decisions, task scope, authorizations, security requirements, HOLDs and GitHub protections always prevail. This rule grants no implementation, runtime or deployment authority.
 ## Project positioning
 
 Governed Content is a governance layer for selected site-lifecycle content.
